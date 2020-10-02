@@ -1,0 +1,194 @@
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Wauzmons">
+		<title>Combined Overview</title>
+		<link rel="stylesheet" href="assets/bootstrap.min.css"/>
+	</head>
+	
+	<body>
+	
+		<div id="header" class="jumbotron fixed-top">
+			<div class="container">
+                <h1>Website Title</h1>
+            </div>
+		</div>
+		
+		<div id="main" class="container">
+			<div class="row">
+				
+				<div class="col-8 column">
+					<div id="tabview" class="tabbed">
+                        <input checked="checked" id="tab1" type="radio" name="tabs"/>
+                        <input id="tab2" type="radio" name="tabs"/>
+                        <input id="tab3" type="radio" name="tabs"/>
+                        <input id="tab4" type="radio" name="tabs"/>
+                        <input id="tab5" type="radio" name="tabs"/>
+                        <nav>
+                            <label for="tab1">Tab 1</label>
+                            <label for="tab2">Tab 2</label>
+                            <label for="tab3">Tab 3</label>
+                            <label for="tab4">Tab 4</label>
+                            <label for="tab5">Tab 5</label>
+                        </nav>
+                        <figure>									
+                            <div class="tab1 widget">
+                                <h3>Tab 1 Content</h3>
+                                <div class="widget" style="height: 5000px; background: linear-gradient(white, aquamarine);">
+                                    <p>Long container for scrolling...</p>
+                                </div>
+                            </div>
+                            <div class="tab2 widget">
+                                <h3>Tab 2 Content</h3>
+                            </div>
+                            <div class="tab3 widget">
+                                <h3>Tab 3 Content</h3>
+                            </div>
+                            <div class="tab4 widget">
+                                <h3>Tab 4 Content</h3>
+                            </div>
+                            <div class="tab5 widget">
+                                <h3>Tab 5 Content</h3>
+                            </div>
+                        </figure>
+                    </div>
+				</div>
+				
+				<div class="col-4 column">
+					<div id="sidebar-top-area" class="widget">
+						<h3>Sidebar Column</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+							sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+							sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+						</p>
+					</div>
+					<div id="sidebar-sticky-area" class="widget sticky-top">
+						<h3>Sticky Area</h3>
+						<p>This area will stick to the top, when scrolling down far enough.</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	
+		<style>
+		
+			#main {
+				margin-top: 180px;
+				margin-bottom: 30px;
+			}
+			
+			#main-area {
+				background: linear-gradient(white, aquamarine);
+			}
+			
+			#sidebar-sticky-area {
+				top: 162px;
+			}
+		
+			.jumbotron {
+                height: 150px;
+                padding: 4.75rem 3rem;
+                margin-bottom: 0;
+				border-radius: 0;
+				background: linear-gradient(to right, darkcyan, lightskyblue);
+				color: white;
+            }
+			
+			.column {
+				padding: 10;
+				padding-right: 0px;
+			}
+			
+			.column:last-child {
+				padding-right: 10px;
+			}
+			
+			.widget {
+				margin-bottom: 10px;
+				padding: 10px;
+				border: 1px solid silver;
+				background: white;
+			}
+			
+			.widget:last-child {
+				margin-bottom: 0;
+			}
+            
+            .tabbed figure { 
+                display: block;
+                clear: both;
+            }
+            
+            .tabbed > input,
+            .tabbed figure > div {
+                display: none;
+            }
+            
+            #tab1:checked ~ figure .tab1,
+            #tab2:checked ~ figure .tab2,
+            #tab3:checked ~ figure .tab3,
+            #tab4:checked ~ figure .tab4,
+            #tab5:checked ~ figure .tab5 {
+                display: block;
+            }
+            
+            nav label {
+                float: left;
+                padding: 8px;
+                margin: 0px;
+                font-size: 14px;
+                border-top: 1px solid silver;
+                border-right: 1px solid silver;
+                background: aliceblue;
+                color: black;
+            }
+
+            nav label:nth-child(1) {
+                border-left: 1px solid silver;
+            }
+            
+            nav label:hover {
+                background: darkcyan;
+				color: white;
+            }
+            
+            nav label:active {
+                background: white;
+            }
+            
+            #tab1:checked ~ nav label[for="tab1"],
+            #tab2:checked ~ nav label[for="tab2"],
+            #tab3:checked ~ nav label[for="tab3"],
+            #tab4:checked ~ nav label[for="tab4"],
+            #tab5:checked ~ nav label[for="tab5"] {
+                background: white;
+                color: black;
+                position: relative;
+                border-bottom: none;
+            }
+
+            #tab1:checked ~ nav label[for="tab1"]:after,
+            #tab2:checked ~ nav label[for="tab2"]:after,
+            #tab3:checked ~ nav label[for="tab3"]:after,
+            #tab4:checked ~ nav label[for="tab4"]:after,
+            #tab5:checked ~ nav label[for="tab5"]:after {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 2px;
+                width: 100%;
+                background: white;
+                left: 0;
+                bottom: -1px;
+            }
+		
+		</style>
+	
+	</body>
+	
+</html>
