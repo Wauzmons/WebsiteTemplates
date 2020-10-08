@@ -28,16 +28,59 @@
                         <input id="tab4" type="radio" name="tabs"/>
                         <input id="tab5" type="radio" name="tabs"/>
                         <nav>
-                            <label for="tab1">Tab 1</label>
-                            <label for="tab2">Tab 2</label>
-                            <label for="tab3">Tab 3</label>
-                            <label for="tab4">Tab 4</label>
-                            <label for="tab5">Tab 5</label>
+                            <label for="tab1">Title of Tab 1</label>
+                            <label for="tab2">Title of Tab 2</label>
+                            <label for="tab3">Title of Tab 3</label>
+                            <label for="tab4">Title of Tab 4</label>
+                            <label for="tab5">Title of Tab 5</label>
                         </nav>
                         <figure>									
                             <div class="tab1 widget">
                                 <h3>Tab 1 Content</h3>
-                                <div class="widget" style="height: 5000px; background: linear-gradient(white, aquamarine);">
+								<p>
+									Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+									sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+									sed diam voluptua.
+								</p>
+								<p>
+									Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+									sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+									sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+									sed diam voluptua.
+								</p>
+								<table>				
+									<tr>
+										<th>This</th>
+										<th>is</th>
+										<th>the TABLE HEADER</th>
+									</tr>
+									<tr>
+										<td>Values</td>
+										<td>of</td>
+										<td>the first row</td>
+									</tr>
+									<tr>
+										<td>More values</td>
+										<td>inside</td>
+										<td>of the second row</td>
+									</tr>
+									<tr>
+										<td>A releatively long text that is</td>
+										<td>inside</td>
+										<td>of the third row</td>
+									</tr>
+									<tr>
+										<td>Row</td>
+										<td>Number</td>
+										<td>4</td>
+									</tr>
+									<tr>
+										<td>The last row</td>
+										<td>of the</td>
+										<td>~ Fancy Table ~</td>
+									</tr>
+								</table>
+                                <div class="widget" style="margin-top: 10px; height: 5000px; background: linear-gradient(white, aquamarine);">
                                     <p>Long container for scrolling...</p>
                                 </div>
                             </div>
@@ -82,8 +125,8 @@
 				margin-bottom: 30px;
 			}
 			
-			#main-area {
-				background: linear-gradient(white, aquamarine);
+			#sidebar-top-area {
+				margin-top: 32px;
 			}
 			
 			#sidebar-sticky-area {
@@ -118,6 +161,12 @@
 			.widget:last-child {
 				margin-bottom: 0;
 			}
+			
+			h3 {
+				padding: 2px 10px;
+				background: linear-gradient(to right, lightslategray, darkslategray);
+				color: white;
+			}
             
             .tabbed figure { 
                 display: block;
@@ -139,13 +188,13 @@
             
             nav label {
                 float: left;
-                padding: 8px;
+                padding: 5px 20px;
                 margin: 0px;
                 font-size: 14px;
                 border-top: 1px solid silver;
                 border-right: 1px solid silver;
-                background: aliceblue;
-                color: black;
+                background: darkcyan;
+                color: white;
             }
 
             nav label:nth-child(1) {
@@ -153,8 +202,8 @@
             }
             
             nav label:hover {
-                background: darkcyan;
-				color: white;
+                background: aliceblue;
+				color: black;
             }
             
             nav label:active {
@@ -185,6 +234,38 @@
                 background: white;
                 left: 0;
                 bottom: -1px;
+            }
+			
+			table {
+                width: 100%;
+                table-layout: fixed;
+            }
+            
+            table, th, td {
+                word-wrap: break-word;
+            }
+            
+            th {
+                height: 20px;
+                padding: 5px;
+                text-align: left;
+                background-color: darkcyan;
+                color: white;
+            }
+        
+            td {
+                height: 20px;
+                padding: 5px;
+                text-align: left;
+                vertical-align: bottom;
+            }
+            
+            tr:nth-child(even) {
+                background-color: white;
+            }
+            
+            tr:nth-child(odd) {
+                background-color: aliceblue;
             }
 		
 		</style>

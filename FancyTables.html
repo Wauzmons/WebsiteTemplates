@@ -1,0 +1,135 @@
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Wauzmons">
+		<title>Fancy Tables</title>
+		<link rel="stylesheet" href="assets/bootstrap.min.css"/>
+	</head>
+	
+	<body>
+	
+		<div id="header" class="jumbotron fixed-top">
+			<div class="container">
+                <h1>Website Title</h1>
+            </div>
+		</div>
+		
+		<div id="main" class="container">
+			<div class="row">
+				
+				<div class="col-12 column">
+                    <table>				
+						<tr>
+							<th>This</th>
+							<th>is</th>
+							<th>the TABLE HEADER</th>
+						</tr>
+						<tr>
+							<td>Values</td>
+							<td>of</td>
+							<td>the first row</td>
+						</tr>
+						<tr>
+							<td>More values</td>
+							<td>inside</td>
+							<td>of the second row</td>
+						</tr>
+						<tr>
+							<td>A releatively long text that is</td>
+							<td>inside</td>
+							<td>of the third row</td>
+						</tr>
+						<tr>
+							<td>Row</td>
+							<td>Number</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>The last row</td>
+							<td>of the</td>
+							<td>~ Fancy Table ~</td>
+						</tr>
+					</table>
+				</div>
+				
+			</div>
+		</div>
+	
+		<style>
+		
+			#main {
+				margin-top: 180px;
+				margin-bottom: 30px;
+			}
+		
+			.jumbotron {
+                height: 150px;
+                padding: 4.75rem 3rem;
+                margin-bottom: 0;
+				border-radius: 0;
+				background: linear-gradient(to right, darkcyan, lightskyblue);
+				color: white;
+            }
+			
+			.column {
+				padding: 10;
+				padding-right: 0px;
+			}
+			
+			.column:last-child {
+				padding-right: 10px;
+			}
+			
+			.widget {
+				margin-bottom: 10px;
+				padding: 10px;
+				border: 1px solid silver;
+				background: white;
+			}
+			
+			.widget:last-child {
+				margin-bottom: 0;
+			}
+            
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+            
+            table, th, td {
+                border: 1px solid silver;
+                word-wrap: break-word;
+            }
+            
+            th {
+                height: 20px;
+                padding: 5px;
+                text-align: left;
+                background-color: darkcyan;
+                color: white;
+            }
+        
+            td {
+                height: 20px;
+                padding: 5px;
+                text-align: left;
+                vertical-align: bottom;
+            }
+            
+            tr:nth-child(even) {
+                background-color: white;
+            }
+            
+            tr:nth-child(odd) {
+                background-color: aliceblue;
+            }
+		
+		</style>
+	
+	</body>
+	
+</html>
